@@ -15,6 +15,14 @@ body {
 div.sidebar {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+div.sidebar div.nav-wrapper {
+    display: grid;
+    grid-template-rows: 2fr 3fr;
 }
 
 div.header {
