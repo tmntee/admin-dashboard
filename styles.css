@@ -1,14 +1,45 @@
+@font-face {
+    font-family: 'pt_sansbold';
+    src: url('PTS75F-webfont.eot');
+    src: url('PTS75F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('PTS75F-webfont.woff2') format('woff2'),
+         url('PTS75F-webfont.woff') format('woff'),
+         url('PTS75F-webfont.ttf') format('truetype'),
+         url('PTS75F-webfont.svg#pt_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pt_sansregular';
+    src: url('PTS55F-webfont.eot');
+    src: url('PTS55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('PTS55F-webfont.woff2') format('woff2'),
+         url('PTS55F-webfont.woff') format('woff'),
+         url('PTS55F-webfont.ttf') format('truetype'),
+         url('PTS55F-webfont.svg#pt_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: dotted 1px red;
 
+    font-family: "pt_sansregular", Georgia, 'Times New Roman', Times, serif;
+
     --main-content-color: #D7D0C8;
-    --text-color: #C8C6AF;
+    --heading-text-color: rgb(68, 64, 64);
+    --post-text-color: #C8C6AF;
     --sidebar-color: #F87666;
     --project-tab-color: #BD897E;
     --shadow-color: #95A78D;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "pt_sansbold", Georgia, 'Times New Roman', Times, serif;
 }
 
 div {
@@ -58,6 +89,7 @@ div.main-content {
     display: grid;
     grid-template-columns: 3fr  1fr;
     grid-template-rows: 1fr 1fr;
+
 }
 
 div.main-content div.project-content {
