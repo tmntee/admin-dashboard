@@ -3,6 +3,12 @@
     margin: 0;
     padding: 0;
     border: dotted 1px red;
+
+    --main-content-color: #D7D0C8;
+    --text-color: #C8C6AF;
+    --sidebar-color: #F87666;
+    --project-tab-color: #BD897E;
+    --shadow-color: #95A78D;
 }
 
 div {
