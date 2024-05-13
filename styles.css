@@ -34,7 +34,11 @@
     --post-text-color: #C8C6AF;
     --sidebar-color: #F87666;
     --project-tab-color: #BD897E;
-    --shadow-color: #95A78D;
+    --sidebar-text-color: #e8eaed;
+}
+
+svg {
+    fill: var(--sidebar-text-color);
 }
 
 h1, h2, h3, h4, h5 {
@@ -60,9 +64,44 @@ div.sidebar {
     background-color: var(--sidebar-color);
 }
 
-div.sidebar div.nav-wrapper {
+div.logo {
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+}
+
+div.logo h1 {
+    color: var(--sidebar-text-color);
+    padding: 10px;
+}
+
+div.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 4em;
+}
+
+div.sidebar ul li {
     display: grid;
-    grid-template-rows: 2fr 3fr;
+    grid-template-columns: 1fr 3fr;
+    color: var(--sidebar-text-color);
+}
+
+div.sidebar ul li>img {
+    justify-self: center;
+}
+
+div.sidebar ul li a {
+    padding-left: 15px;
+    color: var(--sidebar-text-color);
+    text-decoration: none;
+}
+
+div.sidebar ul li a:visited {
+    padding-left: 15px;
+    color: var(--sidebar-text-color);
+    text-decoration: none;
 }
 
 div.header {
