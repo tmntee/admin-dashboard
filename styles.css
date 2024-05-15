@@ -34,7 +34,7 @@
     --post-text-color: #C8C6AF;
     --sidebar-color: #F87666;
     --project-tab-color: #BD897E;
-    --sidebar-text-color: #e8eaed;
+    --sidebar-text-color: white;
 }
 
 svg {
@@ -85,7 +85,6 @@ div.sidebar ul {
 div.sidebar ul li {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    color: var(--sidebar-text-color);
 }
 
 div.sidebar ul li>img {
@@ -130,12 +129,27 @@ div.header>div {
 div.header div.user-search {
     display: grid;
     grid-template-columns: 4fr 2fr;
-    padding: 30px;
+    margin: 20px 30px;
 }
 
-div.header div.user-search div {
+div.header div.user-search>div {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: end;
+    padding-right: 20px;
+}
+
+div.header div.user-search>div>* {
+    margin: 0px 10px;
+}
+
+form.search {
+    display: flex;
+    align-items: center;
+}
+
+form.search>* {
+    margin: 0px 10px;
 }
 
 form.search>input {
