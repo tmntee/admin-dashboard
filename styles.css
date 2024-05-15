@@ -222,6 +222,11 @@ div.announcement-content {
     border-radius: 7px;
     box-shadow: gray 2px 2px 10px;
     margin-top: 10px;
+    height: 90%;
+}
+
+div.announcement-content>div {
+    padding: 25px;
 }
 
 div.trending {
@@ -232,6 +237,13 @@ div.trending-content {
     background-color: white;
     border-radius: 7px;
     box-shadow: gray 2px 2px 10px;
+    height: 90%;
+    margin-top: 10px;
+}
+
+div.profile {
+    display: flex;
+    padding: 15px;
 }
 
 div.project-content {
