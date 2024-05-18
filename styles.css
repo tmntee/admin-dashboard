@@ -253,6 +253,12 @@ div.trending-content {
 div.profile {
     display: flex;
     padding: 15px;
+    height: 25%;
+}
+
+div.profile-info {
+    align-self: center;
+    padding: 10px;
 }
 
 div.project-content {
