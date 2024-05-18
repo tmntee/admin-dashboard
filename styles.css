@@ -294,6 +294,10 @@ p.post-text {
     padding-top: 10px;
 }
 
+p.post-text {
+    grid-column : 2 / 4;
+}
+
 .card-tab {
     background-color: var(--project-tab-color);
     grid-column: 1 / 2;
