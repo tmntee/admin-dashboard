@@ -30,15 +30,11 @@
     font-family: "pt_sansregular", Georgia, 'Times New Roman', Times, serif;
 
     --main-content-color: #D7D0C8;
-    --heading-text-color: rgb(68, 64, 64);
+    --heading-text-color: #000000;
     --post-text-color: #C8C6AF;
     --sidebar-color: #F87666;
     --project-tab-color: #BD897E;
-    --sidebar-text-color: white;
-}
-
-svg {
-    fill: var(--sidebar-text-color);
+    --sidebar-text-color: #FFFFFF;
 }
 
 h1, h2, h3, h4, h5 {
@@ -240,6 +236,7 @@ div.announcement-content>div {
 
 div.trending {
     margin: 25px;
+    margin-top: 0px;
 }
 
 div.trending-content {
@@ -266,9 +263,10 @@ div.project-content {
 }
 
 div.project-gallery {
+    height: 95%;
     display: grid;
-    grid-template-columns: repeat(2, minmax(20%, 500px));
-    grid-template-rows: repeat(3, minmax(10%, 250px));
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 30px;
     margin-top: 10px;
 }
