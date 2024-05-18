@@ -186,7 +186,7 @@ div.project-buttons>button:hover {
     background-color: #fab4a6;
 }
 
-div.project-buttons>button:focus {
+div.project-buttons>button:active {
     background-color: #d86859;
 }
 
@@ -312,4 +312,25 @@ p.post-text {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding-right: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-symbols>button {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border: none;
+    margin: 10px;
+}
+
+.project-symbols>button:hover {
+    background-color: rgb(226, 226, 226);
+    border-radius: 50px;
+}
+
+.project-symbols>button:active {
+    background-color: rgb(163, 163, 163);
+    border-radius: 50px;
 }
