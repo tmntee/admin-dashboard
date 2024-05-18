@@ -287,6 +287,12 @@ div.project-card h2 {
     grid-row: 1 / 2;
 }
 
+div.project-card>h2, 
+p.post-text {
+    padding: 0px 20px;
+    padding-top: 10px;
+}
+
 .card-tab {
     background-color: var(--project-tab-color);
     grid-column: 1 / 2;
@@ -298,4 +304,7 @@ div.project-card h2 {
 .project-symbols {
     grid-column: 3 / 4;
     grid-row: 3 / 4;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
